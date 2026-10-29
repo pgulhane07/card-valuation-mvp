@@ -1,0 +1,82 @@
+{
+  "L1_EXACT": {
+    "card": {
+      "sport": "BASEBALL",
+      "year": 2026,
+      "manufacturer": "TOPPS",
+      "set_name": "HOLIDAY",
+      "set_key": "BASEBALL:2026:TOPPS:HOLIDAY",
+      "player_key": "BASEBALL:PLAYER_001",
+      "player_name": "Demo Baseball Player 001",
+      "card_number": "H001",
+      "parallel_code": "GREEN",
+      "serial_limit": 99,
+      "image_variant_code": "NONE",
+      "back_variant_code": "NONE",
+      "autograph": false,
+      "relic": false
+    },
+    "target_grade_bucket": "PSA_9",
+    "expected": "Exact card + exact PSA grade"
+  },
+  "L2_GRADE_FALLBACK": {
+    "card": {
+      "sport": "BASEBALL",
+      "year": 2026,
+      "manufacturer": "TOPPS",
+      "set_name": "HOLIDAY",
+      "set_key": "BASEBALL:2026:TOPPS:HOLIDAY",
+      "player_key": "BASEBALL:PLAYER_002",
+      "player_name": "Demo Baseball Player 002",
+      "card_number": "H002",
+      "parallel_code": "GREEN",
+      "serial_limit": 99,
+      "image_variant_code": "NONE",
+      "back_variant_code": "NONE",
+      "autograph": false,
+      "relic": false
+    },
+    "target_grade_bucket": "PSA_9",
+    "expected": "Same card has PSA 10 sales but not PSA 9"
+  },
+  "L3_VARIANT_FALLBACK": {
+    "card": {
+      "sport": "BASEBALL",
+      "year": 2026,
+      "manufacturer": "TOPPS",
+      "set_name": "HOLIDAY",
+      "set_key": "BASEBALL:2026:TOPPS:HOLIDAY",
+      "player_key": "BASEBALL:PLAYER_003",
+      "player_name": "Demo Baseball Player 003",
+      "card_number": "H003",
+      "parallel_code": "GREEN",
+      "serial_limit": 99,
+      "image_variant_code": "NONE",
+      "back_variant_code": "NONE",
+      "autograph": false,
+      "relic": false
+    },
+    "target_grade_bucket": "PSA_9",
+    "expected": "Same player/year/manufacturer has different variants"
+  },
+  "L4_COHORT_FALLBACK": {
+    "card": {
+      "sport": "BASEBALL",
+      "year": 2026,
+      "manufacturer": "TOPPS",
+      "set_name": "HOLIDAY",
+      "set_key": "BASEBALL:2026:TOPPS:HOLIDAY",
+      "player_key": "BASEBALL:PLAYER_004",
+      "player_name": "Demo Baseball Player 004",
+      "card_number": "H004",
+      "parallel_code": "GREEN",
+      "serial_limit": 99,
+      "image_variant_code": "NONE",
+      "back_variant_code": "NONE",
+      "autograph": false,
+      "relic": false
+    },
+    "target_grade_bucket": "PSA_9",
+    "expected": "Other players in 2026 TOPPS cohort only"
+  }
+}
